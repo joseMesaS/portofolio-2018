@@ -1,0 +1,299 @@
+.parallax {
+
+    height: 100vh;
+    perspective: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+  
+::-webkit-scrollbar {
+
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+
+}
+  
+.layer {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+  
+.bk-intro {
+
+    background-image: url(../../assets/introbk.jpg);
+    background-size: cover;
+    z-index: 1;
+    transform: translateZ(-200px) scale(1.68);
+
+}
+  
+.front-intro {
+
+    z-index: 3;
+    transform: translateZ(0px) ;
+
+}
+  
+.content {
+
+    position: relative;
+    top: 100vh;
+    height: 100vh;
+    background-color: white;
+
+}
+
+.heading-ph {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 7px;
+    background-color: white;
+    font-weight: 500;
+
+}
+
+.intro-heading {
+
+    margin: 0.1em 1em 0.2em 1em;
+    font-size: 1em;
+
+}
+   
+.intro-footer {
+
+    position: absolute;
+    background-color: white;
+    height: 15%;
+    width:100vw;
+    bottom: 0;
+
+}
+  
+.logoMain {
+
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    width: 144px;
+    height: 144px;
+    background-image: url("../../assets/logoJA.png");
+    background-size: contain;
+
+}
+  
+hr {
+
+    margin-top: 3%;
+    width: 90%;
+    border: 1px black solid;
+
+}
+  
+.footerCont {
+
+    text-align: center;
+
+}
+
+.aboutBtn {
+
+    position: absolute;
+    top: 50%;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.3em 1em 0.3em 1em;
+    transform: rotate(-90deg) translateY(-100%);
+
+}
+  
+.workBtn {
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.3em 1em 0.3em 1em;
+    transform: rotate(90deg) translateY(-90%);
+
+}
+
+
+.content-body{
+
+    position: absolute;
+    top: 30vh;
+    height: 70vh;
+    
+    animation-duration: 1s;
+    animation-name: initPos;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    background-image: url('../../assets/marble2.jpg');
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+
+}
+
+.content-body.active {
+    animation-duration: 1s;
+    animation-name: finalPos;
+    animation-fill-mode: forwards;
+}
+  
+.content-footer {
+
+    position: absolute;
+    top: 106vh;
+    right: 0;
+
+    height:6vh;
+    background-color: black;
+
+    background-repeat: no-repeat;
+    background-size:  cover;
+    animation-duration: 0.5s;
+    animation-name: initPos1;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+}
+  
+.content-footer.active {
+
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-name: finalPos1;
+    animation-fill-mode: forwards;
+}
+  
+.mission {
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8%;
+    width: 600px;
+    text-align:center;
+    border: 2px solid white;
+
+}
+.missionHeader {
+
+    font-size: 2.3rem;
+    position: absolute;
+    transform:  rotate(-90deg) translateX(-700px);
+    animation-duration: 1s;
+    animation-name: headInit;
+    animation-fill-mode: forwards;
+
+}
+
+.missionHeader.activeHeader {
+
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: headFinal;
+    animation-fill-mode: forwards;
+
+}
+  
+
+.JApic {
+
+    position: absolute;
+    right: 0;
+    top: 8vh;
+  
+}
+
+  
+  
+.social  {
+    color: wheat;
+}
+.social :hover {
+    color: white;
+}
+
+.social {
+    margin: 0 5px 0 5px;
+}
+
+@keyframes finalPos {
+    from {
+      width: 0;
+    }
+    to {
+      width: 70%;
+    }
+  }
+  
+  @keyframes initPos {
+    from {
+      width: 70%;
+    }
+    to {
+      width: 0;
+    }
+  }
+  
+  @keyframes finalPos1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes initPos1 {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0;
+    }
+  }
+  
+  @keyframes headInit{
+    from {
+      transform:  rotate(-90deg) translateX(-150px);
+    }
+    to {
+      transform:  rotate(-90deg) translateX(-900px);
+    }
+  }
+  
+  @keyframes headFinal {
+    from {
+      transform:  rotate(-90deg) translateX(-700px);
+    }
+    to {
+      transform:  rotate(-90deg) translateX(-150px);
+    }
+  }
+  

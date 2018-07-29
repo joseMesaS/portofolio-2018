@@ -1,0 +1,315 @@
+.about {
+
+    height: 100vh;
+    background-color: black;
+    perspective: 300px;
+    perspective-origin: right;
+    
+}
+
+::-webkit-scrollbar {
+
+    width: 0px; 
+    background: transparent;
+
+}
+
+.navAbout {
+
+    position: fixed;
+    width: 21%;
+    height: 100vh;
+    left: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(26, 26, 26);
+
+}
+
+.containerInf {
+
+    position: absolute;
+    left: 21%;
+    height: 100vh;
+    width: 79%;
+    font-family: 'Open Sans', sans-serif;
+    overflow: scroll;
+    scroll-behavior: smooth;
+
+}
+  
+.infoContent {
+
+    position: absolute;
+    left: 0;
+    width: 40%;
+    text-align: right;
+    color: white;
+    line-height: 20px;
+   
+}
+  
+.media {
+
+    position: absolute;
+    left: 40%;
+    width: 60%;
+    text-align: right;
+    color: white;
+
+}
+
+.front {
+
+    transform: translateZ(100px) scale(0.6666666667);
+    z-index: 99;
+    
+}
+
+.page.front {
+
+    right: -18%;
+    
+}
+
+.content .container{
+
+    padding-left: 30px;
+    padding-right: 0;
+
+}
+
+.page {
+
+    position: relative;
+    height: 100vh;
+
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 0;
+}
+ 
+.prev {
+
+    position: fixed;
+    z-index: 100;
+    color: rgb(255, 123, 172);
+    border: 1px solid rgb(255, 123, 172);
+    right: 2px;
+
+}
+
+.prev :hover {
+
+    color: white;
+
+}
+
+.navAbout ul{
+
+    color: white;
+    list-style-type: none;
+    padding-right: 20px;
+
+}
+
+.headerNav {
+
+    color: white;
+    text-align: center;
+    background-color: rgb(255, 123, 172);
+    margin: 15% 7% 40% 7%;
+    letter-spacing: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+
+.nav-item {
+    text-align: right;
+    margin: 40px 20px 40px 0;
+}
+  
+.Name {
+
+    text-decoration: none;
+    color: white;
+    margin-bottom: 0;
+
+}
+
+.Name p {
+
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 17px;
+
+}
+  
+a {
+
+    text-decoration: none;
+    color: white;
+
+}
+  
+a:hover {
+
+    color: rgb(255, 123, 172);
+
+}
+
+p.text-center {
+
+    margin-bottom: 0;
+
+}
+
+.logo {
+
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 11%;
+    left: 8%;
+    background-image: url("../../assets/logoPink.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.sectionHeader {
+
+    font-size: 1.7rem;
+    margin-bottom: -5px;
+}
+
+.WhoI {
+
+    font-size: 0.8em;
+    position: relative;
+    top: 39%;
+
+}
+
+.ProFor {
+    
+    color: rgb(220, 76, 70);
+    font-size: 0.8em;
+    font-weight:  500;
+    position: relative;
+    top: 40%;
+
+}
+
+.text-left {
+
+    text-align: left;
+
+}
+
+.pinkFont {
+
+    color:rgb(255, 123, 172);
+
+}
+
+.skills {
+
+    font-size: 0.8em;
+    position: relative;
+    top: 33%;
+
+}
+
+.contactMe {
+
+    position: absolute;
+    top: 30%;
+
+}
+
+.personalInfo {
+
+    color: rgb(220, 76, 70);
+    top:5px;
+
+}
+
+.aFallsW {
+
+    width: 410px;
+    height: 422.4px;
+    background-image: url('../../assets/angelFalls.png');
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -40%)
+
+}
+
+#aFallsCap {
+
+    position: absolute;
+    top: 90%;
+    right: 10%;
+
+}
+
+.aFallsW:hover {
+
+    width: 405px;
+    background-position: 407px;
+
+}
+
+.ams {
+
+    line-height: 0;
+    font-weight: 600;
+    font-size: 9rem;
+    position: absolute;
+    top: 40%;
+    right: 7%;
+
+}
+
+.red {
+    color: red;
+}
+
+.plane {
+
+    position: absolute;
+    right: 20%;
+    bottom: 30%;
+
+}
+
+.tablet {
+    
+    position: absolute;
+    top: 25%;
+    right: 50%;
+
+}
+
+.mask {
+
+    position: absolute;
+    top: 45%;
+    right: 18%;
+
+}
+
+.down {
+
+    position: absolute;
+    bottom: 14%;
+    left: -18%;
+
+}
+
+  
