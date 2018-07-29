@@ -1,0 +1,24 @@
+.cForm {
+    width: 400px;
+}
+
+.input-group-addon {
+    background-color: rgb(255, 123, 172);
+    color: black;
+    border-color: black;
+}
+
+.form-control {
+    border-color: black;
+}
+
+.btn-default {
+
+    color: black;
+    background-color: rgb(255, 123, 172);
+    border: none;
+}
+
+.btn-default:hover {
+    background-color: rgb(255, 255, 255);
+}
