@@ -115,7 +115,7 @@ hr {
     background-color: black;
     padding: 0.3em 1em 0.3em 1em;
     transform: rotate(-90deg) translateY(-100%);
-
+    cursor: pointer;
 }
   
 .workBtn {

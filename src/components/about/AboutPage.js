@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react'
-import { Link } from 'react-router-dom'
+import {slideL} from '../../transitions'
 import './AboutPage.css'
 
 export default class AboutPage extends PureComponent { 
@@ -12,7 +12,7 @@ export default class AboutPage extends PureComponent {
     render() {
         return (
             <div className="about">
-                <Link className="prev" to="/"><i className="fa fa-arrow-right"></i></Link>
+                <a className="prev" onClick={() => this.props.history.push({ pathname: '/', state: slideL })}><i className="fa fa-arrow-right"></i></a>
                 <div className="navAbout">
                     <div className="headerNav">
                         <a className = "Name" href="#/Main"><p>JOSE ANTONIO MESA</p></a>

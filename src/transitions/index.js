@@ -17,4 +17,5 @@ export default ({ transition = '', duration = 0, pageKey, children }) => (
   </TransitionGroup>
 )
 
-export { default as slide } from './slide'
+export { default as slideR } from './slideR'
+export { default as slideL } from './slideL'

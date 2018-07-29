@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react'
-import {Link} from 'react-router-dom'
 import './MainPage.css'
+import {slideR} from '../../transitions'
 
 export default class MainPage extends PureComponent {
   state = {
@@ -25,7 +25,7 @@ export default class MainPage extends PureComponent {
           <div className="intro-body">
             <div className="logoMain"></div>
 
-            <Link className="aboutBtn" to='/aboutMe' >ABOUT</Link>
+            <a className="aboutBtn" onClick={() => this.props.history.push({ pathname: '/aboutMe', state: slideR })} >ABOUT</a>
             <a className="workBtn" href="#/Work">WORK</a>
 
             <div className="heading-ph">
