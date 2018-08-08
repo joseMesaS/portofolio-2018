@@ -47,7 +47,7 @@ export default class MainPage extends PureComponent {
               </div>
 
               <div className="mission">
-                <p>Hi there, I'm Jose. <br/>And I'm a Web developer aspirant. My goal is to listen
+                <p className="higl">Hi there, I'm Jose. <br/>And I'm a Web developer aspirant. My goal is to listen
                 and observe what my clients wants and to understand the essence of what they trully need, and to
                 give them back a concept that hopefully would surpass their spectations. A concept designed to bring
                 together beautifull aesthetics, great User Experiece and the latest features and technologies that takes full

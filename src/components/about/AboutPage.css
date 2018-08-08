@@ -90,7 +90,7 @@
     padding-right: 0;
 }
  
-.prev {
+.prevAb {
 
     position: fixed;
     z-index: 100;
@@ -101,7 +101,7 @@
 
 }
 
-.prev :hover {
+.prevAb :hover {
 
     color: white;
 

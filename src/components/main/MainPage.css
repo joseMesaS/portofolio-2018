@@ -147,6 +147,7 @@ hr {
     background-image: url('../../assets/marble2.jpg');
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
+    z-index: 1;
 
 }
 
@@ -179,6 +180,8 @@ hr {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 
+    z-index: 3;
+
 }
   
 .content-footer.active {
@@ -191,17 +194,29 @@ hr {
   
 .mission {
 
-    font-size: 1.2rem;
-    font-weight: bold;
-    position: absolute;
+    font-size: 2rem;
+    color: black;
+    
+    font-weight: 400;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
-    right: 8%;
+    left: 15%;
     width: 600px;
+
     text-align:center;
-    border: 2px solid white;
+    border: 9px double white;
+    padding: 15px;
 
 }
+
+.higl {
+
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+
+}
+
 .missionHeader {
 
     font-size: 2.3rem;
@@ -228,6 +243,7 @@ hr {
     position: absolute;
     right: 0;
     top: 8vh;
+    z-index: 2;
   
 }
 
@@ -249,7 +265,7 @@ hr {
       width: 0;
     }
     to {
-      width: 70%;
+      width: 100%;
     }
   }
   

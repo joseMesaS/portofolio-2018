@@ -1,53 +1,56 @@
 .workContainer {
 
-    height: 100vh;
+  height: 100vh;
 
 }
   
 .art {
 
-    height: 95vh;
-    position: absolute;
-    background-color: rgb(220, 76, 70);
-    width: 50vw;
-    top:5vh;
-    z-index: 2;
+  height: 95vh;
+  position: absolute;
+  background-color: rgb(220, 76, 70);
+  width: 50vw;
+  top:5vh;
+  z-index: 2;
     
 }
   
-  .prev {
-    left: 15px;
-    position: fixed;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 0.3em 1em 0.3em 1em;
-    transform: rotate(-90deg) translate(-400%,-100%);
-    z-index: 99;
-  }
+.prevW {
+
+  left: 11px;
+  position: fixed;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.3em 1em 0.3em 1em;
+  transform: rotate(-90deg) translate(-472%,-100%);
+  z-index: 99;
+  cursor: pointer;
+
+}
   
-  #artWork {
-    margin-top: 8%;
-  }
+#artWork {
+
+  margin-top: 8%;
+
+}
   
-  .caruImg {
-    
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
   
   .art.activeFI {
+
     animation-duration: 1s;
     animation-name: toggleInit;
     animation-fill-mode: forwards;
+
   }
   
   .art.inactiveFI {
+
     animation-duration: 1s;
     animation-name: toggleOffInit;
     animation-fill-mode: forwards;
+
   }
   
   .art.active {
@@ -57,9 +60,11 @@
   }
   
   .art.inactive {
+
     animation-duration: 1s;
     animation-name: toggleOff;
     animation-fill-mode: forwards;
+
   }
   
   @keyframes toggleInit {
@@ -152,6 +157,7 @@
      top: 35%;
      left: 30%;
      transform: translate(-50%, -50%);
+     cursor: pointer;
    }
   
    .artBtn.active {
@@ -192,7 +198,7 @@
      }
    }
   
-   .webBtn {
+   #web {
      font-size: 2rem;
      font-weight: 300;
      color:rgb(220, 76, 70);
@@ -202,6 +208,7 @@
      top: 35%;
      left: 70%;
      transform: translate(-50%, -50%);
+     cursor: pointer;
    }
   
    .webBtn.active {
