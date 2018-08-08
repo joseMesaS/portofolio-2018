@@ -3,6 +3,7 @@ import './App.css';
 
 import MainPage from './components/main/MainPage'
 import AboutPage from './components/about/AboutPage'
+import WorkPage from './components/work/WorkPage'
 
 import styled from 'styled-components'
 import { Router, Switch, Route, Redirect } from 'react-router-dom'
@@ -24,6 +25,7 @@ class App extends Component {
                 <Switch location={location}>
                   <Route exact path="/" component={MainPage} />
                   <Route exact path="/aboutMe" component={AboutPage} />
+                  <Route exact path="/work" component={WorkPage} />
                 </Switch>
               </Transitions>
             </div>

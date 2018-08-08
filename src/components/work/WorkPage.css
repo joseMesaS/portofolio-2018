@@ -1,0 +1,241 @@
+.workContainer {
+
+    height: 100vh;
+
+}
+  
+.art {
+
+    height: 95vh;
+    position: absolute;
+    background-color: rgb(220, 76, 70);
+    width: 50vw;
+    top:5vh;
+    z-index: 2;
+    
+}
+  
+  .prev {
+    left: 15px;
+    position: fixed;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.3em 1em 0.3em 1em;
+    transform: rotate(-90deg) translate(-400%,-100%);
+    z-index: 99;
+  }
+  
+  #artWork {
+    margin-top: 8%;
+  }
+  
+  .caruImg {
+    
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .art.activeFI {
+    animation-duration: 1s;
+    animation-name: toggleInit;
+    animation-fill-mode: forwards;
+  }
+  
+  .art.inactiveFI {
+    animation-duration: 1s;
+    animation-name: toggleOffInit;
+    animation-fill-mode: forwards;
+  }
+  
+  .art.active {
+    animation-duration: 1s;
+    animation-name: toggle;
+    animation-fill-mode: forwards;
+  }
+  
+  .art.inactive {
+    animation-duration: 1s;
+    animation-name: toggleOff;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes toggleInit {
+    from {
+      width: 50%;
+    }
+    to {
+      width: 99.55%;
+    }
+  }
+  
+  @keyframes toggleOffInit {
+    from {
+      width:50%;
+    }
+    to {
+      width: 0;
+    }
+  }
+  
+  .web {
+    height: 100vh;
+    position: absolute;
+    right: 0;
+  }
+  
+  .web.activeFI {
+    animation-duration: 1s;
+    animation-name: toggleInit;
+    animation-fill-mode: forwards;
+  }
+  
+  .web.inactiveFI {
+    animation-duration: 1s;
+    animation-name: toggleOffInit;
+    animation-fill-mode: forwards;
+  }
+  
+  .web.active {
+    animation-duration: 1s;
+    animation-name: toggle;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes toggleOff {
+    from {
+      width: 99.55%;
+    }
+    to {
+      width: 0;
+    }
+  }
+  
+  @keyframes toggle {
+    from {
+      width:0;
+    }
+    to {
+      width: 99.55%;
+    }
+  }
+  
+  .logoR {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    z-index: 5;
+  }
+  
+  .logoW.active {
+    display: none;
+  }
+  
+  .logoW {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    z-index: 5;
+  }
+  
+   .artBtn {
+     font-size: 2rem;
+     font-weight: 300;
+     color:white;
+     text-decoration: none;
+     position: absolute;
+     z-index: 4;
+     top: 35%;
+     left: 30%;
+     transform: translate(-50%, -50%);
+   }
+  
+   .artBtn.active {
+     pointer-events: none;
+     cursor: default;
+     animation-duration: 1s;
+     animation-name: toggleArtBtn;
+     animation-fill-mode: forwards;
+   }
+  
+   .artBtn.inactive {
+     animation-duration: 1s;
+     animation-name: toggleOffArtBtn;
+     animation-fill-mode: forwards;
+   }
+  
+   @keyframes toggleArtBtn {
+     from {
+       left: 30%;
+     }
+     to {
+       left:50%;
+     }
+   }
+  
+   @keyframes toggleOffArtBtn {
+     from {
+       left: 30%;
+       top: 45%;
+       color:white;
+       font-size: 2rem;
+     }
+     to {
+       left:2%;
+       top: 3%;
+       color: rgb(220, 76, 70);
+       font-size: 1rem;
+     }
+   }
+  
+   .webBtn {
+     font-size: 2rem;
+     font-weight: 300;
+     color:rgb(220, 76, 70);
+     text-decoration: none;
+     position: absolute;
+     z-index: 4;
+     top: 35%;
+     left: 70%;
+     transform: translate(-50%, -50%);
+   }
+  
+   .webBtn.active {
+     pointer-events: none;
+     cursor: default;
+     animation-duration: 1s;
+     animation-name: toggleWebBtn;
+     animation-fill-mode: forwards;
+   }
+  
+   .webBtn.inactive {
+     animation-duration: 1s;
+     animation-name: toggleOffWebBtn;
+     animation-fill-mode: forwards;
+   }
+  
+   @keyframes toggleWebBtn {
+     from {
+       left: 70%;
+     }
+     to {
+       left:50%;
+     }
+   }
+  
+   @keyframes toggleOffWebBtn {
+     from {
+       left: 70%;
+       top: 45%;
+       font-size: 2rem;
+     }
+     to {
+       left:98%;
+       top: 3%;
+       font-size: 1rem;
+     }
+   }

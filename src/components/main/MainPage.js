@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react'
 import './MainPage.css'
-import {slideR} from '../../transitions'
+import {slideR, slideL} from '../../transitions'
 
 export default class MainPage extends PureComponent {
   state = {
@@ -26,7 +26,7 @@ export default class MainPage extends PureComponent {
             <div className="logoMain"></div>
 
             <a className="aboutBtn" onClick={() => this.props.history.push({ pathname: '/aboutMe', state: slideR })} >ABOUT</a>
-            <a className="workBtn" href="#/Work">WORK</a>
+            <a className="workBtn" onClick={() => this.props.history.push({ pathname: '/work', state: slideL })}>WORK</a>
 
             <div className="heading-ph">
               <p className="intro-heading" >JOSE ANTONIO MESA</p>
