@@ -130,6 +130,7 @@
 .navi-item {
     text-align: right;
     margin: 40px 20px 40px 0;
+    cursor: pointer;
 }
   
 .Name {
@@ -149,21 +150,21 @@
 
 }
   
-a:link {
+.navi-item:link {
 
     text-decoration: none;
     color: white;
 
 }
 
-a:visited {
+.navi-item:visited {
 
     text-decoration: none !important;
     color: white;
     
 }
   
-a:hover {
+.navi-item:hover {
 
     text-decoration: none;
     color: rgb(255, 123, 172);

@@ -25,8 +25,8 @@ export default class MainPage extends PureComponent {
           <div className="intro-body">
             <div className="logoMain"></div>
 
-            <a className="aboutBtn" onClick={() => this.props.history.push({ pathname: '/aboutMe', state: slideR })} >ABOUT</a>
-            <a className="workBtn" onClick={() => this.props.history.push({ pathname: '/work', state: slideL })}>WORK</a>
+            <p className="aboutBtn" onClick={() => this.props.history.push({ pathname: '/aboutMe', state: slideR })} >ABOUT</p>
+            <p className="workBtn" onClick={() => this.props.history.push({ pathname: '/work', state: slideL })}>WORK</p>
 
             <div className="heading-ph">
               <p className="intro-heading" >JOSE ANTONIO MESA</p>
@@ -47,12 +47,12 @@ export default class MainPage extends PureComponent {
               </div>
 
               <div className="mission">
-                <p className="higl">Hi there, I'm Jose. <br/>And I'm a Web developer aspirant. My goal is to listen
-                and observe what my clients wants and to understand the essence of what they trully need, and to
-                give them back a concept that hopefully would surpass their spectations. A concept designed to bring
-                together beautifull aesthetics, great User Experiece and the latest features and technologies that takes full
-                advantages of the website capabilities. <br/>I want to master this practices and hopefully turn them
-                into a craft.</p>
+                <p className="higl"><span className="openP">Hey there I'm Jose </span> and I recently graduated as a Full Stack Developer from
+                  Codaisseur Academy <span className="openP">:&#123;)</span>, where I've learnt some of the most wicked and cuting edge JavaScript technologies.
+                  Having a background as Electrical Engineer, allowed me to develop a great 
+                  ability for solving problems. Combined with my
+                  passion for exploring new things and challenging myself, I’m ready to take the
+                  next step in my career as a web developer.</p>
               </div>
 
             </div>

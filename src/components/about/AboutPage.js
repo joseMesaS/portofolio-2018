@@ -6,7 +6,7 @@ import ContactForm from './ContactForm'
 export default class AboutPage extends PureComponent { 
 
     navHandler = (scroll) => {
-        
+       
         this.containerInf.scrollTop = scroll
     }
 
@@ -19,10 +19,10 @@ export default class AboutPage extends PureComponent {
                         <a className = "Name" href="#/Main"><p>JOSE ANTONIO MESA</p></a>
                     </div>
                     <ul className="navi" >
-                        <li className="navi-item"><a onClick={()=> this.navHandler(0)} id="Who" href="#">About Me</a></li>
-                        <li className="navi-item"><a onClick={()=> this.navHandler(680)} id="ProFor" href="#" >Development as developer</a></li>
-                        <li className="navi-item"><a onClick={()=> this.navHandler(1335)} id="Skills" href="#">Skills</a></li>
-                        <li className="navi-item"><a onClick={()=> this.navHandler(2000)} id="Contac" href="#">Contact Info</a></li>
+                        <li className="navi-item"><p onClick={()=> this.navHandler(0)} id="Who" >About Me</p></li>
+                        <li className="navi-item"><p onClick={()=> this.navHandler(680)} id="ProFor" >Development as developer</p></li>
+                        <li className="navi-item"><p onClick={()=> this.navHandler(1335)} id="Skills">Skills</p></li>
+                        <li className="navi-item"><p onClick={()=> this.navHandler(2000)} id="Contac">Contact Info</p></li>
                     </ul>
                 </div>
 
@@ -34,7 +34,7 @@ export default class AboutPage extends PureComponent {
                                 <div className="logo"></div>
                                 <section className="WhoI" >
                                     <h3>Origins.</h3>
-                                    <p>Before I wanted to become a front-end developer, I wanted to become a few other things, of those things was electric engineering that stuck along. At that time I was living in Venezuela where I was born and raised, a beautiful land of warm people and breathtaking landscapes, and was while studying engineering that for the first time I got a grasp of computer programming and discovered my love for it.</p>
+                                    <p>Before I wanted to become a developer, I wanted to become a few other things, of those things was electrical engineering that stuck along. At that time I was living in Venezuela where I was born and raised, a beautiful land of warm people and breathtaking landscapes, and was while studying engineering that for the first time I got a grasp of computer programming and discovered my love for it.</p>
                                     <p>Right  after I achieved my degree as electric engineer I took the decision of moving to Amsterdam hopping  to learn and live new experiences, the kind of experiences that you get from living into such a multicultural and vibrating city.</p>
                                     <p>Once I got establish I started searching for the last tendencies and most uptrending thecnologies about software programing, looking for the area that would best fit to my interests. I have always feel passionate about art and graphic designing so it was just natural that I had decided to study web programming were I could incorporate my sense of designing as well.</p>
                                 </section>
