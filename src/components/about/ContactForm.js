@@ -3,7 +3,7 @@ import { FormGroup, ControlLabel, FormControl, InputGroup, Button } from 'react-
 import './ContactForm.css'
 import * as request from 'superagent'
 
-const baseUrl = 'http://localhost:4001' 
+const baseUrl = 'https://glacial-cove-99092.herokuapp.com' 
 
 export default class ContactForm extends React.Component {
     state = {
