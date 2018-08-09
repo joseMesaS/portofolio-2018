@@ -59,8 +59,8 @@ export default class MainPage extends PureComponent {
 
             <div className="content-footer active" >
              
-              <a className="social" href=""><i class="fab fa-github-alt fa-2x"></i></a>
-              <a className="social" href="https://www.linkedin.com/in/jose-antonio-mesa-solorzano/"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a className="social" href=""><i className="fab fa-github-alt fa-2x"></i></a>
+              <a className="social" href="https://www.linkedin.com/in/jose-antonio-mesa-solorzano/"><i className="fab fa-linkedin fa-2x"></i></a>
               
 
             </div>

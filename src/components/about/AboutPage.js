@@ -16,7 +16,7 @@ export default class AboutPage extends PureComponent {
                 <a className="prevAb" onClick={() => this.props.history.push({ pathname: '/', state: slideL })}><i className="fa fa-arrow-right"></i></a>
                 <div className="navAbout">
                     <div className="headerNav">
-                        <a className = "Name" href="#/Main"><p>JOSE ANTONIO MESA</p></a>
+                    <div className="Name" onClick={() => this.props.history.push({ pathname: '/', state: slideL })}><p>JOSE ANTONIO MESA</p></div>
                     </div>
                     <ul className="navi" >
                         <li className="navi-item"><p onClick={()=> this.navHandler(0)} id="Who" >About Me</p></li>
@@ -82,7 +82,7 @@ export default class AboutPage extends PureComponent {
                     <div className="media">
                         <div className="page front">
                             <div className="aFallsW " alt= "Angel Falls"></div>
-                            <caption id="aFallsCap"class="text-right float-right">Angel Falls Canaima, Venezuela.</caption>
+                            <div id="aFallsCap" className="text-right float-right">Angel Falls Canaima, Venezuela.</div>
                         </div>
 
                         <div className="page front">

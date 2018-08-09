@@ -5,8 +5,8 @@ import MainPage from './components/main/MainPage'
 import AboutPage from './components/about/AboutPage'
 import WorkPage from './components/work/WorkPage'
 
-import styled from 'styled-components'
-import { Router, Switch, Route, Redirect } from 'react-router-dom'
+
+import { Router, Switch, Route } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
 
 import Transitions from './transitions'

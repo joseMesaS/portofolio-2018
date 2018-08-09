@@ -138,7 +138,12 @@
     text-decoration: none;
     color: white;
     margin-bottom: 0;
+    cursor: pointer;
 
+}
+
+.Name:hover {
+    color:black;
 }
 
 .Name p {

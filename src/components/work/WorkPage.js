@@ -64,9 +64,9 @@ export default class WorkPage extends PureComponent {
         }
     }
 
-    renderCards = (url, label) => {
+    renderCards = (url, label,index) => {
         return (
-            <div className="card">
+            <div className="card" key={index}>
              <img className="thumbN" src={url} alt="" />
                 <div className="imageLabel">
                  <p>{label}</p>
@@ -81,14 +81,14 @@ export default class WorkPage extends PureComponent {
         return (
             <div className="workContainer"  >
                 <p className="prevW" onClick={() => this.props.history.push({ pathname: '/', state: slideR })} >HOME</p>
-                <a href="#"><img className="logoR" src={require("../../assets/logoRed.png")} alt="" /></a>
-                <a href="#"><img className="logoW" src={require("../../assets/logoWhite.png")} alt="" /></a>
+                <div><img className="logoR" src={require("../../assets/logoRed.png")} alt="" /></div>
+                <div ><img className="logoW" src={require("../../assets/logoWhite.png")} alt="" /></div>
                 <p id="art" className={`artBtn ${ this.state.artBtnStatus }`} onClick={this.handleArtView}>Art</p>
                 <p id="web" className={`webBtn ${ this.state.webBtnStatus }`} onClick={this.handleWebView}>Web</p>
 
                 <div className={`art ${ this.state.artStatus }`}  >
                     <div id="artWork" className={`${ this.state.artStatus }`} >
-                        {artwork.map(element => this.renderCards(element,Labels[0])) }
+                        {artwork.map((element,index) => this.renderCards(element,Labels[0],index)) }
 
                     
                     </div>
