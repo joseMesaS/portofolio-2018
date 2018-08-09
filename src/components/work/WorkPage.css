@@ -12,6 +12,7 @@
   width: 50vw;
   top:5vh;
   z-index: 2;
+  overflow: scroll;
     
 }
   
@@ -29,11 +30,58 @@
   cursor: pointer;
 
 }
+
+.prevW:hover {
+  color: #5EA478;
+}
   
 #artWork {
 
-  margin-top: 8%;
+  width: 100%;
+  position: relative;
+  margin-top: 300px;
+  display: none;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  
+  padding: 0 30px;
+  
+}
 
+#artWork.active {
+  display: flex;
+}
+
+#artWork.activeFI {
+  display: flex;
+}
+
+
+.card {
+
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  margin: 10px 10px;
+}
+
+.thumbN {
+  width: 100%;
+  height: 80%;
+  
+}
+
+.imageLabel {
+  height: 20%;
+  width: 100%;
+  background-color: white;
+  padding-top: 4px;
+  padding-left: 10px;
 }
   
   

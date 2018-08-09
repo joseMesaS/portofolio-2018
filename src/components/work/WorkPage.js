@@ -1,6 +1,9 @@
 import React, {PureComponent} from 'react'
 import './WorkPage.css'
 import {slideR} from '../../transitions'
+const artwork = [require("../../assets/artWork/port6.jpg"),require("../../assets/artWork/port8.jpg"),require("../../assets/artWork/port10.jpg"),require("../../assets/artWork/port11.jpg")
+,require("../../assets/artWork/port15.gif"),require("../../assets/artWork/port16.gif"),require("../../assets/artWork/port17.gif")]
+const Labels = ['Cate B. portrait']
 
 export default class WorkPage extends PureComponent {
     state = { artBtnStatus : '' , artStatus: '', webBtnStatus: '', webStatus: ''}
@@ -61,17 +64,32 @@ export default class WorkPage extends PureComponent {
         }
     }
 
+    renderCards = (url, label) => {
+        return (
+            <div className="card">
+             <img className="thumbN" src={url} alt="" />
+                <div className="imageLabel">
+                 <p>{label}</p>
+             </div>
+            </div>
+        )
+    }
+
+
+
     render() {
         return (
             <div className="workContainer"  >
-                <a className="prevW" onClick={() => this.props.history.push({ pathname: '/', state: slideR })} >HOME</a>
+                <p className="prevW" onClick={() => this.props.history.push({ pathname: '/', state: slideR })} >HOME</p>
                 <a href="#"><img className="logoR" src={require("../../assets/logoRed.png")} alt="" /></a>
                 <a href="#"><img className="logoW" src={require("../../assets/logoWhite.png")} alt="" /></a>
                 <p id="art" className={`artBtn ${ this.state.artBtnStatus }`} onClick={this.handleArtView}>Art</p>
                 <p id="web" className={`webBtn ${ this.state.webBtnStatus }`} onClick={this.handleWebView}>Web</p>
 
                 <div className={`art ${ this.state.artStatus }`}  >
-                    <div id="artWork" className="container" >
+                    <div id="artWork" className={`${ this.state.artStatus }`} >
+                        {artwork.map(element => this.renderCards(element,Labels[0])) }
+
                     
                     </div>
                 </div>
