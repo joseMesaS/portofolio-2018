@@ -64,9 +64,9 @@ export default class AboutPage extends PureComponent {
                                 <section className="contactMe ">
                                     <h1 className="contactHeader">Contact me today</h1>
                                     <p>Please feel free to reach out to me if you have any question or just to send a friendly hello.</p>
-                                    <br/>
+                                    <br className="br"/>
                                     <h3>Contact Information</h3>
-                                    <br/>
+                                    <br className="br"/>
                                     <small className="personalInfo">joseantoniomesa.com <br/>
                                     Jan Eversenstraat 26 1 <br/>
                                     1065 EC AMSTERDAM <br/>

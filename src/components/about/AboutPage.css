@@ -176,9 +176,6 @@
     
 }
 
-
-
-
 p.text-center {
 
     margin-bottom: 0;
@@ -327,8 +324,286 @@ p.text-center {
 }
 
 .cForm {
+
     position: absolute;
     top: 45%;
     left:20%;
+
 }
   
+@media (max-width:1130px) {
+
+    .aFallsW {
+       
+        transform: translate(-50%, -40%) scale(0.7)
+    
+    }
+    
+    #aFallsCap {
+     
+        top: 83%;
+        right: 10%;
+    
+    }
+
+    .ams {
+
+        font-size: 8rem;
+    
+    }
+    
+    .plane {
+
+        right: 0;
+        transform: scale(0.8)
+    
+    }
+
+    .tablet {
+    
+        transform: scale(0.7);
+        right: 30%;
+    
+    }
+    
+    .mask {
+        
+        transform: scale(0.7);
+        right: 8%;
+    
+    }
+    
+    .cForm {
+
+        position: absolute;
+        transform: scale(0.8);
+        left:0;
+
+    }
+
+}
+
+@media (max-width:870px) {
+
+    .about {
+
+        perspective: none;
+      
+    }
+  
+    .navAbout {
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 30px;
+        z-index: 5;
+
+    }
+  
+    .headerNav {
+
+        margin: 0;
+        padding-top: 4px;
+        padding-bottom: 4px;
+
+    }
+  
+    .navAbout ul{
+        
+        display: none;
+
+    }
+
+  
+    .containerInf {
+
+        position: relative;
+        height:100vh;
+        width: 100vw;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1;
+
+    }
+  
+    .infoContent {
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        text-align: center;
+
+    }
+
+    .containerC {
+
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+     
+    .logo {
+
+        width: 100px;
+        height: 100px;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+  
+    .media {
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 420%;
+        text-align: center;
+
+    }
+
+    .front {
+        
+        left: 50%;
+        transform: translateX(-50%) scale(0.6666666667);
+        
+    }
+  
+    .aFallsW {
+
+        display: none;
+
+    }
+  
+  
+    .WhoI {
+
+        font-size: 0.7em;
+        position: relative;
+        top: 40%;
+        z-index: 5;
+
+    }
+  
+    .ProFor {
+
+        color: rgb(220, 76, 70);
+        font-size: 0.65em;
+        font-weight:  bold;
+        position: relative;
+        top: 40%;
+
+    }
+  
+    .skills {
+
+        font-size: 0.7em;
+        line-height: 12px;
+        position: relative;
+        top: 50%;
+
+    }
+
+    .contactMe {
+
+        font-size: 0.6em;
+        position: relative;
+        top: 5%;
+
+    }
+
+    .br {
+
+        display: none;
+    
+    }
+  
+    .personalInfo {
+
+        text-align: center;
+
+    }
+
+    #contact {
+
+        display: block;
+
+    }
+  
+    #aFallsCap {
+
+        display: none;
+
+    }
+  
+    .ams {
+
+        line-height: 0.8;
+        font-size: 6rem;
+        position: absolute;
+        left: 0;
+
+    }
+  
+    .plane {
+
+        position: absolute;
+        left: 20%;
+
+    }
+
+    .Iamsterdam {
+
+        position: absolute;
+        width: 350px;
+        height: 450px;
+        top: -30%;
+        left: 20%;
+
+    }
+
+    .tablet {
+
+        display: none;
+    
+    }
+  
+    .mask {
+
+
+        top: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  
+  
+  
+    .cForm {
+        
+        left: 50%;
+        transform: translateX(-50%) scale(1.2);
+        top: 85%;
+        z-index: 100;
+
+    }
+  
+         
+    .contactHeader {
+
+        font-size: 3.5em;
+        text-align: center;
+        
+    }
+  
+    .prevAb {
+
+        display: none;
+       
+    }
+
+  
+}
