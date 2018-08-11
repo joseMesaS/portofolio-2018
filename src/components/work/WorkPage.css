@@ -2,6 +2,7 @@
 
   height: 100vh;
 
+
 }
   
 .art {
@@ -18,7 +19,7 @@
   
 .prevW {
 
-  left: 11px;
+  left: 10px;
   position: fixed;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
@@ -32,7 +33,9 @@
 }
 
 .prevW:hover {
+
   color: #5EA478;
+
 }
   
 #artWork {
@@ -120,7 +123,7 @@
       width: 50%;
     }
     to {
-      width: 99.55%;
+      width: 98.2%;
     }
   }
   
@@ -171,7 +174,7 @@
       width:0;
     }
     to {
-      width: 99.55%;
+      width: 98.2%;
     }
   }
   
@@ -293,4 +296,38 @@
        top: 3%;
        font-size: 1rem;
      }
+   }
+
+   @media  (max-width:870px) {
+     .prevW {
+      transform: rotate(-90deg) translate(-458%,-120%) scale(0.7);
+     }
+
+     @keyframes toggleOffWebBtn {
+      from {
+        left: 70%;
+        top: 45%;
+        font-size: 2rem;
+      }
+      to {
+        left:95%;
+        top: 3%;
+        font-size: 1rem;
+      }
+    }
+
+    @keyframes toggleOffArtBtn {
+      from {
+        left: 30%;
+        top: 45%;
+        color:white;
+        font-size: 2rem;
+      }
+      to {
+        left:5%;
+        top: 3%;
+        color: rgb(220, 76, 70);
+        font-size: 1rem;
+      }
+    }
    }

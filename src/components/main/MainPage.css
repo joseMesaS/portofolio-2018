@@ -44,7 +44,7 @@
 
     position: relative;
     top: 100vh;
-    height: 100vh;
+    height: 109vh;
     background-color: white;
 
 }
@@ -119,7 +119,9 @@ hr {
 }
 
 .aboutBtn:hover {
+
     color: #D93339;
+
 }
   
 .workBtn {
@@ -138,7 +140,9 @@ hr {
 }
 
 .workBtn:hover {
+
     color: #D93339;
+
 }
 
 
@@ -147,7 +151,6 @@ hr {
     position: absolute;
     top: 30vh;
     height: 70vh;
-    
     animation-duration: 1s;
     animation-name: initPos;
     animation-fill-mode: forwards;
@@ -168,12 +171,10 @@ hr {
 .content-footer {
 
     position: absolute;
-    top: 106vh;
+    bottom: 0;
     right: 0;
-
     height:6vh;
     background-color: black;
-
     background-repeat: no-repeat;
     background-size:  cover;
     animation-duration: 0.5s;
@@ -183,11 +184,9 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-
     z-index: 3;
 
 }
@@ -198,13 +197,13 @@ hr {
     animation-duration: 0.5s;
     animation-name: finalPos1;
     animation-fill-mode: forwards;
+
 }
   
 .mission {
 
     font-size: 1.7rem;
     color: black;
-    
     font-weight: 400;
     position: relative;
     top: 50%;
@@ -213,14 +212,15 @@ hr {
     width: 600px;
     background-color: rgba(255, 255, 255, 0.8);
     text-align:left;
-  
     padding: 15px;
 
 }
 
 .openP {
+
     font-weight: 600;
     color: #D93339;
+
 }
 
 
@@ -249,75 +249,199 @@ hr {
 
     position: absolute;
     right: 0;
-    top: 8vh;
+    bottom: 0;
     z-index: 2;
   
 }
 
-  
-  
 .social  {
+
     color: wheat;
+
 }
+
 .social :hover {
+
     color: #D93339;
+
 }
 
 .social {
+
     margin: 0 5px 0 5px;
+
 }
 
 @keyframes finalPos {
+
     from {
       width: 0;
     }
     to {
       width: 100%;
     }
-  }
+}
   
-  @keyframes initPos {
+@keyframes initPos {
+
     from {
       width: 70%;
     }
     to {
       width: 0;
     }
-  }
+
+}
   
-  @keyframes finalPos1 {
+@keyframes finalPos1 {
+
     from {
       width: 0;
     }
     to {
       width: 100%;
     }
-  }
+
+}
   
-  @keyframes initPos1 {
+@keyframes initPos1 {
+
     from {
       width: 100%;
     }
     to {
       width: 0;
     }
-  }
+
+}
   
-  @keyframes headInit{
+@keyframes headInit{
+
     from {
       transform:  rotate(-90deg) translateX(-150px);
     }
     to {
       transform:  rotate(-90deg) translateX(-900px);
     }
-  }
+
+}
   
-  @keyframes headFinal {
+@keyframes headFinal {
+
     from {
       transform:  rotate(-90deg) translateX(-700px);
     }
     to {
       transform:  rotate(-90deg) translateX(-150px);
     }
-  }
+}
+
+
+@media  (max-width:870px) {
+
+    .logoMain {
+
+      width: 100px;
+      height: 100px;
+
+    }
   
+    .heading-ph {
+
+      text-align: center;
+      
+    }
+  
+    .aboutBtn {
+
+      transform: rotate(-90deg) translateY(-100%) scale(0.7);
+
+    }
+
+    .workBtn {
+
+        transform: rotate(90deg) translateY(-90%) scale(0.7);
+
+    }
+
+    .intro-body {
+
+        height: 72%;
+
+    }
+
+    .intro-footer {
+
+        font-size: 0.9em;
+        z-index: 99;
+
+    }
+  
+
+    .JApic {
+
+      display: none;
+  
+    }
+  
+    .content{
+  
+      top: 10vh;
+  
+    }
+  
+    .mission {
+  
+      border: 1px solid;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      text-align: center;
+      font-size: 1.5rem;
+  
+    }
+  
+    .missionHeader {
+
+      position: absolute;
+      font-size: 1.5rem;
+      transform: rotate(-90deg) translate(-1100px,-213px);
+      animation-duration: 1s;
+      animation-name: headInit;
+      animation-fill-mode: forwards;
+
+    }
+  
+    @keyframes headInit{
+
+      from {
+        transform: scale(0.4) rotate(-90deg) translate(-50px,-213px);
+      }
+      to {
+        transform: scale(0.4) rotate(-90deg) translate(-1100px,-213px);
+      }
+    }
+  
+    @keyframes headFinal {
+
+      from {
+        transform: scale(0.4) rotate(-90deg) translate(-1100px,-213px);
+      }
+      to {
+        transform: scale(0.4) rotate(-90deg) translate(-50px,-213px);
+      }
+    }
+  
+}
+  
+@media (max-width: 1180px) {
+
+    .JApic {
+
+        transform: scale(0.6);
+        right: -80px;
+        bottom: -100px;
+    }
+    
+}
