@@ -20,7 +20,7 @@ export default class AboutPage extends PureComponent {
                     </div>
                     <ul className="navi" >
                         <li className="navi-item"><p onClick={()=> this.navHandler(0)} id="Who" >About Me</p></li>
-                        <li className="navi-item"><p onClick={()=> this.navHandler(680)} id="ProFor" >Development as developer</p></li>
+                        <li className="navi-item"><p onClick={()=> this.navHandler(680)} id="ProFor" >Developer Road</p></li>
                         <li className="navi-item"><p onClick={()=> this.navHandler(1335)} id="Skills">Skills</p></li>
                         <li className="navi-item"><p onClick={()=> this.navHandler(2000)} id="Contac">Contact Info</p></li>
                     </ul>
@@ -33,29 +33,33 @@ export default class AboutPage extends PureComponent {
                             <div className="page">
                                 <div className="logo"></div>
                                 <section className="WhoI" >
-                                    <h3>Origins.</h3>
-                                    <p>Before I wanted to become a developer, I wanted to become a few other things, of those things was electrical engineering that stuck along. At that time I was living in Venezuela where I was born and raised, a beautiful land of warm people and breathtaking landscapes, and was while studying engineering that for the first time I got a grasp of computer programming and discovered my love for it.</p>
-                                    <p>Right  after I achieved my degree as electric engineer I took the decision of moving to Amsterdam hopping  to learn and live new experiences, the kind of experiences that you get from living into such a multicultural and vibrating city.</p>
-                                    <p>Once I got establish I started searching for the last tendencies and most uptrending thecnologies about software programing, looking for the area that would best fit to my interests. I have always feel passionate about art and graphic designing so it was just natural that I had decided to study web programming were I could incorporate my sense of designing as well.</p>
+                                    <h3>About Me</h3>
+                                    <p>Before becoming a developer, I had a few other aspirations but was electrical engineering that stuck along with me. At that time, I was living in Venezuela where I was born, a beautiful country, full of warm people, unbelievable landscapes, and arepas (crazy good food you got to try it), and was while studying engineering that for the first time I got a little taste of code and discovered my love for it.</p>
+                                    <p>Right after I achieved my degree, I decided to move to Amsterdam looking for a new adventure, looking to learn and live new experiences, the kind that you get from such a multicultural and vibrant city.</p>
+                                    <p>Since then I have been working in a few restaurants as line cook and occasionally as chef de partie. However, I never lost the sight from my goals, becoming a developer.</p>
                                 </section>
                             </div>
                             <div className="page">
                                 <section className="ProFor" >
                                     <h3>Getting into it</h3>
-                                    <p>The moment that  you start studying web programming by yourself can be more complicated that you were expecting, you would think that just googling "how to build a website?" will give you all the answers, and it could be  but  even if you don't know exactly what to ask you will end even more lost.</p>
-                                    <p>So lets said that I start learning how to build a full-stack website using NodeJS and just learning the bases of css3, html5 and JS. After a few headaches I started getting more deep with CSS,html and javaScript then into using Jquery,Ajax,Json and some basic technologies to bring some more functionalities. Also I started learning to use Adobe Photoshop and illustrator to improve my workflow being able to design before code and render my own graphic media and for image optimization purposes. I also followed the freeCodeCamp Online course to become front-end developer and other online courses. Most recently I have been studying AngularJs 4 in typeScript looking for a better methodologies for building web applications. </p>
+                                    <p>Trying to learn web programming by yourself can be harder than you expected, you think that by just googling "how to build a website?" will give you the answer. Boy, was I wrong because truth is that if you don't know exactly how to ask something, you will end up even more lost.</p>
+                                    <p>So lets said that I start following this online course how to build a full-stack website using NodeJS without even knowing the bases of CSS, HTML and JS, yeah... I was pretty lost indeed. So after a few headaches and some bumps in the road, I started learning the bases, together with some technologies like JQuery, Ajax, and AngularJs.</p>
+                                    <p>I started using Photoshop and illustrator to improve my workflow being able to design before code and render my own graphic media.</p>
+                                    <p>Went through books, tutorials, videos, blogs, followed some online bootcamps, prayed to the gods. And at some point, I was kind of there but not entirely. The more I learned the more aware I was of my ignorance.</p>
+                                    <p>Then I found this awesome Programming academy, Codaisseur. 10 weeks of intensive learning, to become a Full Stack developer and more than learning some of the best technologies and tools for web development, I learned how much I love to code. Now hungry for some more I'm in the hunt for a job to start coding for real.</p>
                                 </section>
                             </div>
                             <div className="page">
                                 <section className="skills">
                                     <h3>Skills</h3>
-                                    <p className="text-left">Thecnicalls:</p>
-                                    <p>Programming Languages:<span className="pinkFont">C, Python, JavaScript, Visual Basic.</span></p>
-                                    <p>Markup Languagues:  <span className="pinkFont">CSS3, HTML5</span></p>
-                                    <p>Frameworks:  <span className="pinkFont">Node.js, Express.js, PyQT4, jQuery,Angular.js</span></p>
+                                    <p className="text-left">Latest Stack</p>
+                                    <p>Base: <span className="pinkFont"> JavaScript / CSS3 / HTML5 / TypeScript.</span></p>
+                                    <p>Front-end Frameworks:  <span className="pinkFont">ReactJs / Redux / AngularJs</span></p>
+                                    <p>Back-end Frameworks:  <span className="pinkFont">Node.js / Express.js / GraphQL / Koa / SQL Databases </span></p>
+                                    <p>Tools:  <span className="pinkFont"> Git collaboration / Docker / Adobe Photoshop / Adobe Illustrator</span></p>
                                     <br/>
                                     <p className="text-left">Hobbies:</p>
-                                    <p className="pinkFont" >Drawing and Painting with Oils, charcoal, color pencils and digital with graphic tablet; Play piano and guitar, sports and crossfit, reading.</p>
+                                    <p className="pinkFont" >Painting with oils, charcoal and color pencils. Playing piano and guitar, crossfit, reading and food.</p>
                                     <br/>
                                     <p >To get some more details you can also download a copy of my <a className="pinkFont" href="../../assets/CurriculumVitae.pdf" download>CV!</a></p>
                                 </section>
