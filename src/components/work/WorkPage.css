@@ -64,6 +64,32 @@
 
 }
 
+#webWork {
+
+  width: 100%;
+  position: relative;
+  margin-top: 300px;
+  display: none;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+
+}
+
+#webWork.active {
+
+  display: flex;
+
+}
+
+#webWork.activeFI {
+
+  display: flex;
+
+}
+
 .card {
 
   width: 200px;

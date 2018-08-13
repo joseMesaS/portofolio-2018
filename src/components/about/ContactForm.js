@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormGroup, ControlLabel, FormControl, InputGroup, Button } from 'react-bootstrap';
+import { FormGroup, ControlLabel, FormControl, InputGroup, Button, Popover, OverlayTrigger } from 'react-bootstrap';
 import './ContactForm.css'
 import * as request from 'superagent'
 
@@ -24,10 +24,21 @@ export default class ContactForm extends React.Component {
             .then(response => console.log(response.body))
             .catch(err => alert(err))
         
+        this.setState({
+            name: '',
+            email: '',
+            message: ''
+        })    
     }
 
     render() {
-       
+
+        const popoverFocus = (
+            <Popover id="popover-trigger-focus">
+              <strong>Message Send!</strong>
+            </Popover>
+        )
+          
         return (
             <form className="cForm" onSubmit={this.handleSubmit}>
                 <FormGroup controlId="formBasicText" >
@@ -69,8 +80,9 @@ export default class ContactForm extends React.Component {
                         onChange={this.handleChange}
                     />
                 </FormGroup>
-
-                <Button type="submit">Send</Button>
+                <OverlayTrigger trigger="focus" placement="left" overlay={popoverFocus}>
+                    <Button type="submit">Send</Button>
+                </OverlayTrigger>
 
             </form>
         );

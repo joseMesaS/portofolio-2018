@@ -272,6 +272,12 @@ hr {
 
 }
 
+.codaisseur {
+
+    height: 20px;
+    margin-right: 4px;
+}
+
 @keyframes finalPos {
 
     from {

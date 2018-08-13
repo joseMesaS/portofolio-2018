@@ -495,7 +495,7 @@ p.text-center {
         font-size: 0.65em;
         font-weight:  bold;
         position: relative;
-        top: 40%;
+        top: 35%;
 
     }
   
@@ -504,7 +504,7 @@ p.text-center {
         font-size: 0.7em;
         line-height: 12px;
         position: relative;
-        top: 50%;
+        top: 63%;
 
     }
 
@@ -512,7 +512,7 @@ p.text-center {
 
         font-size: 0.6em;
         position: relative;
-        top: 5%;
+        top: 12%;
 
     }
 
@@ -575,7 +575,7 @@ p.text-center {
     .mask {
 
 
-        top: -10%;
+        top: 0;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -601,8 +601,15 @@ p.text-center {
   
     .prevAb {
 
-        display: none;
+        color: white;
+        width: 40px;
+        text-align: center;
        
+    }
+
+    .prevAb:hover {
+        color: black;
+        
     }
 
   

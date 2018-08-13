@@ -36,7 +36,7 @@ export default class MainPage extends PureComponent {
 
           <div className="intro-footer">
             <hr/>
-            <p className="footerCont">Full Stack Developer / Electrical Engineer / Graphic Artist. </p>
+            <p className="footerCont">Full Stack Developer / Electrical Engineer / Graphic Arts Lover. </p>
           </div>
 
           <div className="content">
@@ -48,7 +48,7 @@ export default class MainPage extends PureComponent {
 
               <div className="mission">
                 <p className="higl"><span className="openP">Hey there I'm Jose </span> and I recently graduated as a Full Stack Developer from
-                  Codaisseur Academy <span className="openP">:&#123;)</span>, where I've learnt some of the most wicked and cuting edge JavaScript technologies.
+                  Codaisseur Academy <img className="codaisseur" src={require("../../assets/codaisseur.jpg")}/>, where I've learned some of the most awesome and cutting-edge JavaScript technologies.
                   Having a background as Electrical Engineer, allowed me to develop a great 
                   ability for solving problems. Combined with my
                   passion for exploring new things and challenging myself, I’m ready to take the
@@ -59,7 +59,7 @@ export default class MainPage extends PureComponent {
 
             <div className="content-footer active" >
              
-              <a className="social" href=""><i className="fab fa-github-alt fa-2x"></i></a>
+              <a className="social" href="https://github.com/joseMesaS"><i className="fab fa-github-alt fa-2x"></i></a>
               <a className="social" href="https://www.linkedin.com/in/jose-antonio-mesa-solorzano/"><i className="fab fa-linkedin fa-2x"></i></a>
               
 
