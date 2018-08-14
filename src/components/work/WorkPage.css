@@ -70,7 +70,7 @@
   position: relative;
   margin-top: 300px;
   display: none;
-  flex-flow: column;
+  flex-flow:column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -88,6 +88,14 @@
 
   display: flex;
 
+}
+
+.webCards {
+  display: flex;
+  flex-flow:row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {

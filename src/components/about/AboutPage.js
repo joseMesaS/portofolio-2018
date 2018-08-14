@@ -61,7 +61,7 @@ export default class AboutPage extends PureComponent {
                                     <p className="text-left">Hobbies:</p>
                                     <p className="pinkFont" >Painting with oils, charcoal and color pencils. Playing piano and guitar, crossfit, reading and food.</p>
                                     <br/>
-                                    <p >To get some more details you can also download a copy of my <a className="pinkFont" href="../../assets/CurriculumVitae.pdf" download>CV!</a></p>
+                                    <p >To get some more details you can also download a copy of my <a className="pinkFont" href={require("../../assets/cvJose2018.pdf")}download>CV!</a></p>
                                 </section>
                             </div>
                             <div className="page">

@@ -4,7 +4,8 @@ import {slideR} from '../../transitions'
 const artwork = [require("../../assets/artWork/port6.jpg"),require("../../assets/artWork/port8.jpg"),require("../../assets/artWork/port10.jpg"),require("../../assets/artWork/port11.jpg")
 ,require("../../assets/artWork/port15.gif"),require("../../assets/artWork/port16.gif"),require("../../assets/artWork/port17.gif")]
 const Labels = ['Lana del Rey','Cate B.','Jude Law','Christopher Walken','Cara Delevingne','Hugh Jackman', 'Ragnar Lodbrok' ]
-
+const webWork = [require("../../assets/web/mastermind.png"),require("../../assets/web/hangman.png")]
+const LabelsW = ['Mastermind','React-Hangman']
 export default class WorkPage extends PureComponent {
     state = { artBtnStatus : '' , artStatus: '', webBtnStatus: '', webStatus: ''}
 
@@ -95,8 +96,13 @@ export default class WorkPage extends PureComponent {
                 </div>
                 <div className={`web ${ this.state.webStatus }`}  >
                     <div id="webWork" className={`${ this.state.webStatus }`} >
-                        <h3>Under construction...</h3>  
-                        <p>You can check my <a href="https://github.com/joseMesaS">GitHub </a> instead </p>    
+                        <h3>Under construction...</h3>   
+                        <div className="webCards">
+                            <a href="https://mastermindjr.herokuapp.com/">{this.renderCards(webWork[0],LabelsW[0],0)}</a>
+                            <a href="https://react-hangtheman.herokuapp.com/">{this.renderCards(webWork[1],LabelsW[1],1)}</a>
+                        </div>
+                        <p>You can check the code and my other projects on <a href="https://github.com/joseMesaS">GitHub </a></p>
+                        
                     </div>
                 </div>
             </div>
