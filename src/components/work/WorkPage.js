@@ -1,13 +1,24 @@
 import React, {PureComponent} from 'react'
 import './WorkPage.css'
 import {slideR} from '../../transitions'
+import {Image, Modal, Button} from 'react-bootstrap'
+
 const artwork = [require("../../assets/artWork/port6.jpg"),require("../../assets/artWork/port8.jpg"),require("../../assets/artWork/port10.jpg"),require("../../assets/artWork/port11.jpg")
 ,require("../../assets/artWork/port15.gif"),require("../../assets/artWork/port16.gif"),require("../../assets/artWork/port17.gif")]
 const Labels = ['Lana del Rey','Cate B.','Jude Law','Christopher Walken','Cara Delevingne','Hugh Jackman', 'Ragnar Lodbrok' ]
 const webWork = [require("../../assets/web/mastermind.png"),require("../../assets/web/hangman.png")]
 const LabelsW = ['Mastermind','React-Hangman']
+
+
 export default class WorkPage extends PureComponent {
-    state = { artBtnStatus : '' , artStatus: '', webBtnStatus: '', webStatus: ''}
+
+    state = { artBtnStatus : '' ,
+              artStatus: '',
+              webBtnStatus: '', 
+              webStatus: '', 
+              picZoom: false, 
+              urlActImg: '', 
+              labelActImg: ''}
 
     handleArtView = () => {
         if(this.state.artBtnStatus === '' && this.state.artStatus === '' && this.state.webBtnStatus === '' && this.state.webStatus === ''){
@@ -67,7 +78,7 @@ export default class WorkPage extends PureComponent {
 
     renderCards = (url, label,index) => {
         return (
-            <div className="card" key={index}>
+            <div className="card" key={index} onClick={() => {this.handleShow(url, label)}}>
              <img className="thumbN" src={url} alt="" />
                 <div className="imageLabel">
                  <p>{label}</p>
@@ -76,9 +87,20 @@ export default class WorkPage extends PureComponent {
         )
     }
 
+    handleClose = () => {
+        console.log(this.state.picZoom)
+        this.setState({ picZoom: false,  urlActImg: '' });
+    }
+
+    handleShow = (url, label) => {
+        this.setState({ picZoom: true, urlActImg: url, labelActImg: label  });
+    }
+    
 
 
     render() {
+
+
         return (
             <div className="workContainer"  >
                 <p className="prevW" onClick={() => this.props.history.push({ pathname: '/', state: slideR })} >HOME</p>
@@ -89,6 +111,19 @@ export default class WorkPage extends PureComponent {
 
                 <div className={`art ${ this.state.artStatus }`}  >
                     <div id="artWork" className={`${ this.state.artStatus }`} >
+
+                        <Modal show={this.state.picZoom} onHide={this.handleClose}>
+                            <Modal.Header closeButton>
+                                <Modal.Title>{this.state.labelActImg}</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body>
+                                <Image className="zoonImg" src={this.state.urlActImg} alt="" responsive/>
+                            </Modal.Body>
+                            <Modal.Footer>
+                                <Button onClick={this.handleClose}>Close</Button>
+                            </Modal.Footer>
+                        </Modal>
+
                         {artwork.map((element,index) => this.renderCards(element,Labels[index],index)) }
 
                     
