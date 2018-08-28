@@ -6,8 +6,8 @@ import {Image, Modal, Button} from 'react-bootstrap'
 const artwork = [require("../../assets/artWork/port6.jpg"),require("../../assets/artWork/port8.jpg"),require("../../assets/artWork/port10.jpg"),require("../../assets/artWork/port11.jpg")
 ,require("../../assets/artWork/port15.gif"),require("../../assets/artWork/port16.gif"),require("../../assets/artWork/port17.gif")]
 const Labels = ['Lana del Rey','Cate B.','Jude Law','Christopher Walken','Cara Delevingne','Hugh Jackman', 'Ragnar Lodbrok' ]
-const webWork = [require("../../assets/web/mastermind.png"),require("../../assets/web/hangman.png")]
-const LabelsW = ['Mastermind','React-Hangman']
+const webWork = [require("../../assets/web/mastermind.png"),require("../../assets/web/hangman.png"),require("../../assets/web/Uticket.png")]
+const LabelsW = ['Mastermind','React-Hangman', 'U-tickets']
 
 
 export default class WorkPage extends PureComponent {
@@ -76,9 +76,20 @@ export default class WorkPage extends PureComponent {
         }
     }
 
-    renderCards = (url, label,index) => {
+    renderArtCards = (url, label,index) => {
         return (
             <div className="card" key={index} onClick={() => {this.handleShow(url, label)}}>
+             <img className="thumbN" src={url} alt="" />
+                <div className="imageLabel">
+                 <p>{label}</p>
+             </div>
+            </div>
+        )
+    }
+
+    renderWebCards = (url, label,index) => {
+        return (
+            <div className="card" key={index}>
              <img className="thumbN" src={url} alt="" />
                 <div className="imageLabel">
                  <p>{label}</p>
@@ -124,7 +135,7 @@ export default class WorkPage extends PureComponent {
                             </Modal.Footer>
                         </Modal>
 
-                        {artwork.map((element,index) => this.renderCards(element,Labels[index],index)) }
+                        {artwork.map((element,index) => this.renderArtCards(element,Labels[index],index)) }
 
                     
                     </div>
@@ -133,8 +144,9 @@ export default class WorkPage extends PureComponent {
                     <div id="webWork" className={`${ this.state.webStatus }`} >
                         <h3>Under construction...</h3>   
                         <div className="webCards">
-                            <a href="https://mastermindjr.herokuapp.com/">{this.renderCards(webWork[0],LabelsW[0],0)}</a>
-                            <a href="https://react-hangtheman.herokuapp.com/">{this.renderCards(webWork[1],LabelsW[1],1)}</a>
+                            <a href="https://mastermindjr.herokuapp.com/">{this.renderWebCards(webWork[0],LabelsW[0],0)}</a>
+                            <a href="https://react-hangtheman.herokuapp.com/">{this.renderWebCards(webWork[1],LabelsW[1],1)}</a>
+                            <a href="https://secret-temple-98908.herokuapp.com/">{this.renderWebCards(webWork[2],LabelsW[2],2)}</a>
                         </div>
                         <p>You can check the code and my other projects on <a href="https://github.com/joseMesaS">GitHub </a></p>
                         
